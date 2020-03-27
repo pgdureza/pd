@@ -2,34 +2,26 @@ import React from "react";
 
 import Chips from "src/components/Chips";
 import image from "src/images/skills.svg";
-import TwoPanels from "src/components/TwoPanels";
-
-const CODING = [
-  "html",
-  "css",
-  "javascript",
-  "typescript",
-  "react",
-  "redux",
-  "nodejs"
-];
-
-const TESTING = ["cypress", "jest", "enzyme", "react-testing-library"];
-
-const PLATFORMS = ["Shopify", "Salesforce CommerceCloud", "Hubspot"];
+import DualPanels from "src/components/DualPanels";
+import AppDataContext from "../AppDataContext";
 
 const Skills = () => {
+  const data = React.useContext(AppDataContext);
   return (
-    <TwoPanels
-      content1={<img src={image} alt="Skills" />}
-      content2={
-        <div>
-          <Chips list={CODING} title="Coding" />
-          <Chips list={TESTING} title="Testing" />
-          <Chips list={PLATFORMS} title="Platforms" />
-        </div>
-      }
-    />
+    <React.Fragment>
+      <DualPanels
+        content1={<img src={image} alt="Skills" data-aos="flip-down" />}
+        content2={
+          <div>
+            {data.skills.map(({ header, items }) => (
+              <div data-aos="fade-right" key={header}>
+                <Chips list={items} title={header} />
+              </div>
+            ))}
+          </div>
+        }
+      />
+    </React.Fragment>
   );
 };
 

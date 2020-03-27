@@ -22,8 +22,10 @@ const Chips: React.FC<IProps> = ({ list, title }) => {
     <React.Fragment>
       <h3>{title}</h3>
       <ListWrapper>
-        {list.map((item: string) => (
-          <Chip className="chip">{item}</Chip>
+        {list.map((item: string, index: number) => (
+          <Chip className="chip" key={index}>
+            {item}
+          </Chip>
         ))}
       </ListWrapper>
     </React.Fragment>

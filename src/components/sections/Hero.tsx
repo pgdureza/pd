@@ -1,9 +1,18 @@
 import React from "react";
 
-import styled from "styled-components";
+import TextyAnim from "rc-texty";
 import breakpoint from "styled-components-breakpoint";
 import background from "src/images/background.jpg";
 import { Theme } from "src/lib";
+import { lightSpeedIn, fadeInDown, pulse } from "react-animations";
+import AppDataContext from "../AppDataContext";
+import styled, { keyframes } from "styled-components";
+
+const animations = {
+  lightSpeedIn: keyframes`${lightSpeedIn}`,
+  fadeInDown: keyframes`${fadeInDown}`,
+  pulse: keyframes`${pulse}`
+};
 
 const Root = styled.div`
   min-height: 100vh;
@@ -12,6 +21,7 @@ const Root = styled.div`
 
 const BackgroundImage = styled.div`
   background-image: url(${background});
+  background-color: #b3b3b3;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -45,6 +55,8 @@ const TextContainer = styled.div`
   width: 100%;
   z-index: 1;
   text-align: center;
+  animation 0.6s ${animations.pulse};
+  animation-delay: 1.9s;
   ${breakpoint("md")`
     max-width: 70vw;
     text-align: left;
@@ -64,6 +76,10 @@ const H1 = styled.h1`
   `}
 `;
 
+const AnimatedSpeedInName = styled.div`
+  animation 1.2s ${animations.lightSpeedIn};
+`;
+
 const H2 = styled.h2`
   width: 100%;
   font-size: 2rem;
@@ -75,13 +91,20 @@ const H2 = styled.h2`
 `;
 
 const Hero = () => {
+  const data = React.useContext(AppDataContext);
   return (
     <Root>
       <BackgroundImage />
       <Overlay>
         <TextContainer>
-          <H1>Patrick G. Dureza</H1>
-          <H2>frontend web developer</H2>
+          <H1>
+            <AnimatedSpeedInName>{data.name}</AnimatedSpeedInName>
+          </H1>
+          <H2>
+            <TextyAnim duration={300} delay={800}>
+              {data.position}
+            </TextyAnim>
+          </H2>
         </TextContainer>
       </Overlay>
     </Root>

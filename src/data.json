@@ -1,0 +1,37 @@
+{
+  "name": "Patrick G. Dureza",
+  "position": "frontend web developer",
+  "aboutMe": {
+    "nameOnHeader": "Patrick",
+    "devSince": "June 2011",
+    "favTech": "Javascript"
+  },
+  "skills": [
+    {
+      "header": "Coding",
+      "items": [
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "react",
+        "redux",
+        "nodejs"
+      ]
+    },
+    {
+      "header": "Testing",
+      "items": ["cypress", "jest", "enzyme", "react-testing-library"]
+    },
+    {
+      "header": "Platforms",
+      "items": ["Shopify", "Salesforce CommerceCloud", "Hubspot", "Firebase"]
+    }
+  ],
+  "socials": {
+    "email": "pgdureza@yoursite.com",
+    "facebook": "https://www.facebook.com/tikdureza/",
+    "github": "https://github.com/pgdureza/",
+    "linkedin": "https://www.linkedin.com/in/tikdureza/"
+  }
+}

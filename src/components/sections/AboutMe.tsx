@@ -1,23 +1,13 @@
 import React from "react";
 
 import image from "src/images/sitting.svg";
-import TwoPanels from "../TwoPanels";
+import DualPanels from "../DualPanels";
 import styled from "styled-components";
 import { Theme } from "src/lib";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import AppDataContext from "../AppDataContext";
 
 const Highlight = styled.span`
   color: ${Theme.color3};
-`;
-
-const Link = styled.a`
-  background: ${Theme.color3};
-  &:hover,
-  &:focus,
-  &:active {
-    background: ${Theme.color3};
-  }
 `;
 
 const P = styled.p`
@@ -26,42 +16,26 @@ const P = styled.p`
 `;
 
 const AboutMe: React.FC = () => {
+  const data = React.useContext(AppDataContext);
   return (
-    <TwoPanels
+    <DualPanels
       content1={
         <React.Fragment>
-          <h4>
-            Hey, my name is <Highlight>Patrick</Highlight>.
+          <h4 data-aos="fade-right">
+            Hey, my name is <Highlight>{data.aboutMe.nameOnHeader}</Highlight>.
           </h4>
           <br />
-          <P>
+          <P data-aos="fade-left">
             I am a web developer who has been in the industry since{" "}
-            <Highlight>June 2011</Highlight>. I love making responsive websites
-            and web apps and I have worked on multiple projects using various
-            tech stacks, but as of right now I am totally passionate about{" "}
-            <Highlight>Javascript</Highlight>!
+            <Highlight>{data.aboutMe.devSince}</Highlight>. I love making
+            responsive websites and web apps and I have worked on multiple
+            projects using various tech stacks, but as of right now I am totally
+            passionate about <Highlight>{data.aboutMe.favTech}</Highlight>!
           </P>
         </React.Fragment>
       }
-      content2={<img src={image} alt="platforms" />}
+      content2={<img data-aos="flip-up" src={image} alt="platforms" />}
     />
-  );
-};
-
-const LinkedIn = () => {
-  return (
-    <div>
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/tikdureza/"
-        className="btn-large waves-effect"
-      >
-        <i className="material-icons">
-          <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
-        </i>
-      </Link>
-    </div>
   );
 };
 

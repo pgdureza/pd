@@ -5,7 +5,7 @@ import { Theme } from "src/lib";
 import breakpoint from "styled-components-breakpoint";
 
 const Root = styled.div`
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   color: ${Theme.color1};
   ${breakpoint("md")`
@@ -19,9 +19,12 @@ const Root = styled.div`
 const Content = styled.div`
   padding-bottom: 4rem;
   ${breakpoint("md")`
-  width: 50%;
-  padding: 0 5rem;
-`}
+    width: 50%;
+    padding: 0 1rem;
+  `};
+  ${breakpoint("lg")`
+    padding: 0 5rem;
+  `};
 `;
 
 interface IProps {
@@ -29,7 +32,7 @@ interface IProps {
   content2: React.ReactNode;
 }
 
-const TwoPanels: React.FC<IProps> = ({ content1, content2 }) => {
+const DualPanels: React.FC<IProps> = ({ content1, content2 }) => {
   return (
     <Root>
       <Content>{content1}</Content>
@@ -38,4 +41,4 @@ const TwoPanels: React.FC<IProps> = ({ content1, content2 }) => {
   );
 };
 
-export default TwoPanels;
+export default DualPanels;
