@@ -2,6 +2,7 @@
   "name": "mev2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pgdureza.github.io/pd/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +54,7 @@
   "devDependencies": {
     "@types/aos": "^3.0.3",
     "@types/react-scroll": "^1.5.4",
-    "@types/styled-components": "^5.0.1"
+    "@types/styled-components": "^5.0.1",
+    "gh-pages": "^2.2.0"
   }
 }

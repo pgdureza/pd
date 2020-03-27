@@ -11,6 +11,7 @@ const Root = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Header = styled.h2`
