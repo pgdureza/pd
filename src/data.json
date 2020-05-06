@@ -16,7 +16,8 @@
         "typescript",
         "react",
         "redux",
-        "nodejs"
+        "nodejs",
+        "next"
       ]
     },
     {
@@ -33,5 +34,59 @@
     "facebook": "https://www.facebook.com/tikdureza/",
     "github": "https://github.com/pgdureza/",
     "linkedin": "https://www.linkedin.com/in/tikdureza/"
-  }
+  },
+  "career": [
+    {
+      "position": "Sr. Frontend Developer",
+      "company": "Tribe",
+      "date": "July 2018 - present",
+      "descriptions": [
+        "Website Development",
+        "SEO",
+        "Product Development",
+        "Influencer Marketing",
+        "Agile Development"
+      ]
+    },
+    {
+      "position": "Shopify Lead Developer",
+      "company": "Outsourced Quality Assured Services",
+      "date": "Nov 2017 – Jun 2018",
+      "descriptions": [
+        "Website Development",
+        "Ecommerce",
+        "Shopify Apps Development",
+        "Agile Development"
+      ]
+    },
+    {
+      "position": "Demandware Developer",
+      "company": "Moku Collective",
+      "date": "Nov 2016 – Nov 2017",
+      "descriptions": ["Website Development", "Ecommerce", "Agile Development"]
+    },
+    {
+      "position": "Technical Consultant",
+      "company": "Netsuite",
+      "date": "Aug 2015 – Nov 2016",
+      "descriptions": [
+        "Client Facing",
+        "Technical Consultation",
+        "Ecommerce",
+        "Website Development"
+      ]
+    },
+    {
+      "position": "Onsite Coordinator/Team Lead",
+      "company": "Pointwest Innovations Corp",
+      "date": "March 2013 - Aug  2015",
+      "descriptions": ["Product Development", "Airlines"]
+    },
+    {
+      "position": "Java Developer",
+      "company": "Pointwest Innovations Corp",
+      "date": "Jun 2011 - Mar 2013",
+      "descriptions": ["Product Development", "Airlines"]
+    }
+  ]
 }

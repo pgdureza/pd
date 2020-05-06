@@ -15,13 +15,15 @@ const Theme = {
   color3: "#F58220",
   color4: "#E6B38A",
   color5: "#ECF7F8",
+  color6: "#EFEFEF",
+  color7: "#808080",
   breakpoints: {
     xs: 0,
     sm: 576,
     md: 768,
     lg: 992,
-    xl: 1200
-  }
+    xl: 1200,
+  },
 };
 
 export { Theme };

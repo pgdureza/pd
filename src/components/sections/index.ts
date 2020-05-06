@@ -1,7 +1,7 @@
 import Skills from "./Skills";
 import Hero from "./Hero";
 import AboutMe from "./AboutMe";
-import Projects from "./Projects";
+import Career from "./Career";
 import ContactMe from "./ContactMe";
 
-export { Skills, Hero, AboutMe, Projects, ContactMe };
+export { Skills, Hero, AboutMe, Career, ContactMe };

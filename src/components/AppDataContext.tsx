@@ -20,12 +20,20 @@ interface ISocials {
   email: string;
 }
 
+interface ICareerEntry {
+  position: string;
+  company: string;
+  date: string;
+  descriptions: string[];
+}
+
 interface IData {
   name: string;
   position: string;
   aboutMe: IAboutMe;
   skills: ISkill[];
   socials: ISocials;
+  career: ICareerEntry[];
 }
 
 const AppDataContext = React.createContext(data as IData);
