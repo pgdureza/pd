@@ -7,7 +7,7 @@ import { Theme } from "src/lib";
 import { fadeIn } from "react-animations";
 
 const animations = {
-  fadeIn: keyframes`${fadeIn}`
+  fadeIn: keyframes`${fadeIn}`,
 };
 
 export type IHeaderStyle = "transparent" | "solid";
@@ -28,12 +28,12 @@ const Root = styled.header<IProps>`
   animation: ${animations.fadeIn} 2s;
   ${({ headerStyle }) => css`
     ${headerStyle === "solid" &&
-      `
+    `
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
         background: ${Theme.white};
       `};
     ${headerStyle === "transparent" &&
-      `
+    `
         text-shadow: 1px 1px black;
         background: transparent;
       `};
@@ -104,13 +104,13 @@ const Header: React.FC<IProps> = ({ headerStyle, activeLink }) => {
           Skills
         </Link>
         <Link
-          active={activeLink === "projects"}
+          active={activeLink === "career"}
           activeClass="active"
-          to="projects"
+          to="career"
           smooth={true}
           duration={500}
         >
-          Projects
+          Career
         </Link>
         <Link
           active={activeLink === "contact"}
