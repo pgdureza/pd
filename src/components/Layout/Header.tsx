@@ -23,6 +23,7 @@ const LogoWrapper = styled.div`
 
 const Link = styled(ReactScroll.Link)<{ active?: boolean }>`
   cursor: pointer;
+  letter-spacing: 2px;
   ${({ active }) =>
     active &&
     css`

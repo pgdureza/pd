@@ -1,4 +1,5 @@
 import React from "react";
+import Chips from "src/components/Chips";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -20,7 +21,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const H3 = styled.h3`
-  color: ${Theme.secondary};
+  color: ${Theme.heroFont};
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
 `;
@@ -28,12 +29,12 @@ const H3 = styled.h3`
 const H5 = styled.h5`
   color: ${Theme.primary};
   font-family: ${Theme.fontFamily1};
+  letter-spacing: -1px;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 `;
 
 const Descriptions = styled.div`
-  color: ${Theme.darkgray};
   font-size: 0.75rem;
 `;
 
@@ -88,12 +89,7 @@ const Career: React.FC = () => {
               {career.company}
             </H5>
             <Descriptions>
-              {career.descriptions.map((description, index) => (
-                <span>
-                  {description}
-                  {index !== career.descriptions.length - 1 && ","}{" "}
-                </span>
-              ))}
+              <Chips list={career.descriptions} />
             </Descriptions>
           </VerticalTimelineElement>
         );

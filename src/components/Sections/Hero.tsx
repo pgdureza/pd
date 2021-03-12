@@ -86,10 +86,11 @@ const AnimatedSpeedInName = styled.div`
 
 const H2 = styled.h2`
   width: 100%;
-  font-size: 2rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 11px;
   ${breakpoint("md")`
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     padding: 1vw 3vw;
   `}
 `;

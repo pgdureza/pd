@@ -25,7 +25,7 @@ const Theme = {
   },
   heroFont: `'Hachi Maru Pop', cursive`,
   fontFamily1: `'Shadows Into Light', cursive`,
-  fontFamily2: `'Open Sans', sans-serif`,
+  fontFamily2: `'Shadows Into Light Two', cursive`,
 };
 
 export { Theme };

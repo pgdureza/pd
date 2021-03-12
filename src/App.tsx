@@ -10,6 +10,7 @@ import { IHeaderStyle } from "src/components/Layout/Header";
 
 const Root = styled.div`
   font-family: ${Theme.fontFamily2};
+  letter-spacing: 4px;
 `;
 
 const App: React.FC = () => {

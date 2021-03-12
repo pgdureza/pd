@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Theme } from "src/lib";
 
 interface IProps {
-  title: string;
+  title?: string;
   list: string[];
 }
 
@@ -12,7 +12,7 @@ const Chip = styled.div`
   color: ${Theme.white};
   display: inline-block;
   height: 32px;
-  font-size: 1rem;
+  font-size: inherit;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0 1rem;
@@ -23,7 +23,6 @@ const Chip = styled.div`
 
 const ListWrapper = styled.div`
   margin-top: 1rem;
-  margin-bottom: 2rem;
 `;
 
 const H3 = styled.h3`
@@ -33,7 +32,7 @@ const H3 = styled.h3`
 const Chips: React.FC<IProps> = ({ list, title }) => {
   return (
     <React.Fragment>
-      <H3>{title}</H3>
+      {title && <H3>{title}</H3>}
       <ListWrapper>
         {list.map((item: string, index: number) => (
           <Chip key={index}>{item}</Chip>
