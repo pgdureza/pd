@@ -56,7 +56,7 @@ const TextContainer = styled.div`
   z-index: 1;
   text-align: center;
   ${breakpoint("md")`
-    max-width: 70vw;
+    max-width: 60vw;
     text-align: left;
   `}
 `;
@@ -73,6 +73,7 @@ const H1 = styled.h1`
   animation-delay: 1.9s;
   margin-bottom: 1rem;
   ${breakpoint("md")`
+    border-radius: 10rem 0 0 3rem;
     white-space: nowrap;
     font-size: 4vw;
     padding: 2vw 6vw;

@@ -6,6 +6,7 @@ interface IAboutMe {
   nameOnHeader: string;
   devSince: string;
   favTech: string;
+  basedIn: string;
 }
 
 interface ISkill {

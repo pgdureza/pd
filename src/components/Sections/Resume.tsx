@@ -7,7 +7,7 @@ import styled, { keyframes } from "styled-components";
 import { Theme } from "src/lib";
 
 const Root = styled.div`
-  padding-top: 5rem;
+  padding-top: 8rem;
 `;
 
 const Arrow = styled(FontAwesomeIcon)`
@@ -43,7 +43,7 @@ const Resume: React.FC = () => {
       </div>
       <br />
       <a
-        href="/static/cv.pdf"
+        href="static/cv.pdf"
         target="_blank"
         rel="noopener noreferrer"
         download

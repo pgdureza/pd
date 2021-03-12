@@ -1,5 +1,5 @@
 import React from "react";
-
+import breakpoint from "styled-components-breakpoint";
 import image from "src/images/me.jpg";
 import DualPanels from "../DualPanels";
 import styled from "styled-components";
@@ -35,6 +35,11 @@ const ImgOverlay = styled.div`
 
 const ImgWrapper = styled.div`
   position: relative;
+  height: calc(100vw - 5rem);
+  ${breakpoint("md")`
+    height: 25rem;
+    width: 25rem;
+  `};
 `;
 
 const H3 = styled.h3`
@@ -46,6 +51,10 @@ const H3 = styled.h3`
 const Img = styled.img`
   background: ${Theme.lightgray};
   border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 `;
 
 const AboutMe: React.FC = () => {
@@ -59,8 +68,8 @@ const AboutMe: React.FC = () => {
             <br />
             <P data-aos="fade-left">
               My name is <Highlight>{data.aboutMe.nameOnHeader}</Highlight>. I'm
-              a {data.position} who has been in the industry since{" "}
-              <Highlight>{data.aboutMe.devSince}</Highlight>.
+              a {data.position} based in the {data.aboutMe.basedIn}. I have been
+              in the industry since {data.aboutMe.devSince}.
             </P>
           </React.Fragment>
         }

@@ -10,6 +10,15 @@ interface IProps {
 const Chip = styled.div`
   background: ${Theme.secondary};
   color: ${Theme.white};
+  display: inline-block;
+  height: 32px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0 1rem;
+  line-height: 32px;
+  font-weight: 500;
+  border-radius: 10rem 3rem;
 `;
 
 const ListWrapper = styled.div`
@@ -27,9 +36,7 @@ const Chips: React.FC<IProps> = ({ list, title }) => {
       <H3>{title}</H3>
       <ListWrapper>
         {list.map((item: string, index: number) => (
-          <Chip className="chip" key={index}>
-            {item}
-          </Chip>
+          <Chip key={index}>{item}</Chip>
         ))}
       </ListWrapper>
     </React.Fragment>
