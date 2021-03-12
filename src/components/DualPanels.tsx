@@ -7,7 +7,7 @@ import breakpoint from "styled-components-breakpoint";
 const Root = styled.div`
   margin: 0 auto;
   text-align: center;
-  color: ${Theme.color1};
+  color: ${Theme.primary};
   ${breakpoint("md")`
     display: flex;
     align-items: center;

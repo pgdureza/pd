@@ -19,19 +19,20 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const H3 = styled.h3`
-  color: ${Theme.color3};
+  color: ${Theme.secondary};
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
 `;
 
 const H5 = styled.h5`
-  color: ${Theme.color1};
+  color: ${Theme.primary};
+  font-family: ${Theme.fontFamily1};
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 `;
 
 const Descriptions = styled.div`
-  color: ${Theme.color7};
+  color: ${Theme.darkgray};
   font-size: 0.75rem;
 `;
 
@@ -41,6 +42,9 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Root = styled(VerticalTimeline)`
   width: 100%;
+  .vertical-timeline-element > div {
+    border-radius: 1.5rem;
+  }
 `;
 
 const Career: React.FC = () => {
@@ -49,7 +53,7 @@ const Career: React.FC = () => {
     <Root>
       {data.career.map((career, index) => {
         const background = Theme.white;
-        const iconBackground = index % 2 ? Theme.color1 : Theme.color3;
+        const iconBackground = index % 2 ? Theme.primary : Theme.secondary;
         const icons = [
           faCode,
           faMoneyBillWave,
@@ -63,7 +67,6 @@ const Career: React.FC = () => {
             className="vertical-timeline-element--work"
             contentStyle={{
               background,
-              color: Theme.color2,
               borderTop: `0.1875rem solid ${iconBackground}`,
             }}
             contentArrowStyle={{

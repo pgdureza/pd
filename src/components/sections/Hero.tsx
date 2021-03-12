@@ -11,7 +11,7 @@ import styled, { keyframes } from "styled-components";
 const animations = {
   lightSpeedIn: keyframes`${lightSpeedIn}`,
   fadeInDown: keyframes`${fadeInDown}`,
-  pulse: keyframes`${pulse}`
+  pulse: keyframes`${pulse}`,
 };
 
 const Root = styled.div`
@@ -42,9 +42,9 @@ const Overlay = styled.div`
   justify-content: center;
   flex-direction: column;
   &:after {
-    background: ${Theme.color1};
+    background: ${Theme.darkgray};
     content: " ";
-    opacity: 0.25;
+    opacity: 0.5;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -55,8 +55,6 @@ const TextContainer = styled.div`
   width: 100%;
   z-index: 1;
   text-align: center;
-  animation 0.6s ${animations.pulse};
-  animation-delay: 1.9s;
   ${breakpoint("md")`
     max-width: 70vw;
     text-align: left;
@@ -64,15 +62,20 @@ const TextContainer = styled.div`
 `;
 
 const H1 = styled.h1`
+  font-family: ${Theme.heroFont};
   margin: 0;
-  background: ${Theme.color3};
-  text-transform: uppercase;
+  background: ${Theme.primary};
   width: 100%;
-  font-size: 3rem;
-  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10rem 3rem 10rem 3rem;
+  animation 0.6s ${animations.pulse};
+  animation-delay: 1.9s;
+  margin-bottom: 1rem;
   ${breakpoint("md")`
-    font-size: 6vw;
-    padding: 1vw 4vw;
+    white-space: nowrap;
+    font-size: 4vw;
+    padding: 2vw 6vw;
   `}
 `;
 
@@ -86,7 +89,7 @@ const H2 = styled.h2`
   padding-top: 0.5rem;
   ${breakpoint("md")`
     font-size: 3.5vw;
-    padding: 1vw 4vw;
+    padding: 1vw 3vw;
   `}
 `;
 

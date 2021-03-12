@@ -1,20 +1,34 @@
 import React from "react";
-import logo from "src/images/logo.png";
 import ReactScroll from "react-scroll";
 
 import styled, { css, keyframes } from "styled-components";
 import { Theme } from "src/lib";
 import { fadeIn } from "react-animations";
 
-const animations = {
-  fadeIn: keyframes`${fadeIn}`,
-};
-
-export type IHeaderStyle = "transparent" | "solid";
 interface IProps {
   headerStyle: IHeaderStyle;
   activeLink?: string;
 }
+
+const animations = {
+  fadeIn: keyframes`${fadeIn}`,
+};
+
+const LogoWrapper = styled.div`
+  flex-shrink: 0;
+  font-size: 2rem;
+  font-family: ${Theme.heroFont};
+`;
+
+const Link = styled(ReactScroll.Link)<{ active?: boolean }>`
+  cursor: pointer;
+  ${({ active }) =>
+    active &&
+    css`
+      color: ${Theme.secondary};
+    `};
+`;
+
 const Root = styled.header<IProps>`
   background-color: transparent;
   padding: 0.5rem 1.5rem;
@@ -29,29 +43,21 @@ const Root = styled.header<IProps>`
   ${({ headerStyle }) => css`
     ${headerStyle === "solid" &&
     `
+        ${Link}{
+          color: ${Theme.primary};
+        }
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
         background: ${Theme.white};
       `};
     ${headerStyle === "transparent" &&
     `
+        ${Link}{
+          color: ${Theme.white};
+        }
         text-shadow: 1px 1px black;
         background: transparent;
       `};
   `};
-`;
-
-const Logo = styled.img`
-  width: 5rem;
-`;
-
-const Link = styled(ReactScroll.Link)<{ active?: boolean }>`
-  cursor: pointer;
-  color: ${Theme.color1};
-  ${({ active }) =>
-    active &&
-    css`
-      color: ${Theme.color3};
-    `};
 `;
 
 const RightLinks = styled.div`
@@ -64,15 +70,11 @@ const RightLinks = styled.div`
     &:active,
     &:focus,
     &.active {
-      color: ${Theme.color3};
+      color: ${Theme.secondary};
       transform: scale(1.05);
     }
     transition: color 0.5s, transform 0.5s;
   }
-`;
-
-const LogoWrapper = styled.div`
-  flex-shrink: 0;
 `;
 
 const Header: React.FC<IProps> = ({ headerStyle, activeLink }) => {
@@ -80,7 +82,7 @@ const Header: React.FC<IProps> = ({ headerStyle, activeLink }) => {
     <Root headerStyle={headerStyle}>
       <LogoWrapper>
         <Link to="hero" smooth={true} duration={500}>
-          <Logo src={logo} alt="logo" />
+          PGD
         </Link>
       </LogoWrapper>
 
@@ -126,4 +128,5 @@ const Header: React.FC<IProps> = ({ headerStyle, activeLink }) => {
   );
 };
 
+export type IHeaderStyle = "transparent" | "solid";
 export default Header;

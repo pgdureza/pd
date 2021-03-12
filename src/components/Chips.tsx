@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Chip = styled.div`
-  background: ${Theme.color3};
+  background: ${Theme.secondary};
   color: ${Theme.white};
 `;
 
@@ -17,10 +17,14 @@ const ListWrapper = styled.div`
   margin-bottom: 2rem;
 `;
 
+const H3 = styled.h3`
+  color: ${Theme.darkgray};
+`;
+
 const Chips: React.FC<IProps> = ({ list, title }) => {
   return (
     <React.Fragment>
-      <h3>{title}</h3>
+      <H3>{title}</H3>
       <ListWrapper>
         {list.map((item: string, index: number) => (
           <Chip className="chip" key={index}>

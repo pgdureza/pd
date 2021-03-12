@@ -15,7 +15,7 @@ const Link = styled.a`
   &:focus,
   &:active {
     svg {
-      color: ${Theme.color3};
+      color: ${Theme.secondary};
       transform: scale(1.1);
     }
   }

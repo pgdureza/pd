@@ -3,21 +3,27 @@
   "position": "frontend web developer",
   "aboutMe": {
     "nameOnHeader": "Patrick",
-    "devSince": "June 2011",
-    "favTech": "Javascript"
+    "devSince": "June 2011"
   },
   "skills": [
     {
       "header": "Coding",
       "items": [
         "html",
-        "css",
+        "css/scss",
         "javascript",
         "typescript",
         "react",
         "redux",
         "nodejs",
-        "next"
+        "nextjs",
+        "use-swr",
+        "react-query",
+        "styled-components",
+        "chakra-ui",
+        "tailwindcss",
+        "antd",
+        "material-ui"
       ]
     },
     {
@@ -30,7 +36,7 @@
     }
   ],
   "socials": {
-    "email": "pgdureza@yoursite.com",
+    "email": "pgdureza@gmail.com",
     "facebook": "https://www.facebook.com/tikdureza/",
     "github": "https://github.com/pgdureza/",
     "linkedin": "https://www.linkedin.com/in/tikdureza/"

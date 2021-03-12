@@ -6,17 +6,16 @@ interface ITheme {
   background: string;
   white: string;
   breakpoints: any;
+  fontFamily1: string;
+  fontFamily2: string;
 }
 
 const Theme = {
   white: "#ffffff",
-  color1: "#59949C",
-  color2: "#3D7A87",
-  color3: "#F58220",
-  color4: "#E6B38A",
-  color5: "#ECF7F8",
-  color6: "#EFEFEF",
-  color7: "#808080",
+  lightgray: "#EFEFEF",
+  darkgray: "#333333",
+  primary: "#603F83",
+  secondary: "#2BAE66",
   breakpoints: {
     xs: 0,
     sm: 576,
@@ -24,6 +23,9 @@ const Theme = {
     lg: 992,
     xl: 1200,
   },
+  heroFont: `'Hachi Maru Pop', cursive`,
+  fontFamily1: `'Shadows Into Light', cursive`,
+  fontFamily2: `'Open Sans', sans-serif`,
 };
 
 export { Theme };

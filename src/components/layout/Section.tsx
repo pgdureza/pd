@@ -5,7 +5,7 @@ import { Theme } from "src/lib";
 const Root = styled.section<IStyleProps>`
   margin: auto;
   width: 100%;
-  padding: 8rem 2.5rem;
+  padding: 5rem 2.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,10 +16,13 @@ const Root = styled.section<IStyleProps>`
 `;
 
 const Header = styled.h2`
-  color: ${Theme.color3};
+  font-family: ${Theme.fontFamily1};
+  letter-spacing: 0.5rem;
+  color: ${Theme.primary};
   text-align: center;
-  text-transform: uppercase;
+  font-weight: 600;
   margin-bottom: 5rem;
+  font-size: 4rem;
 `;
 
 interface IStyleProps {

@@ -4,8 +4,8 @@ import { Theme } from "src/lib";
 import { ContactMe } from "src/components/Sections";
 
 const Root = styled.div`
-  color: ${Theme.color5};
-  background-color: ${Theme.color1};
+  color: ${Theme.white};
+  background-color: ${Theme.primary};
   min-height: 101vh;
   display: flex;
   align-items: center;
