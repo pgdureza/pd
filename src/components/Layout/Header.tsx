@@ -3,7 +3,7 @@ import ReactScroll from "react-scroll";
 
 import styled, { css, keyframes } from "styled-components";
 import { Theme } from "src/lib";
-import { fadeIn } from "react-animations";
+import { fadeIn, pulse } from "react-animations";
 
 interface IProps {
   headerStyle: IHeaderStyle;
@@ -18,6 +18,7 @@ const LogoWrapper = styled.div`
   flex-shrink: 0;
   font-size: 2rem;
   font-family: ${Theme.heroFont};
+  animation 1s ${keyframes`${pulse}`} infinite;
 `;
 
 const Link = styled(ReactScroll.Link)<{ active?: boolean }>`

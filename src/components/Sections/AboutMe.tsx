@@ -5,6 +5,7 @@ import DualPanels from "../DualPanels";
 import styled from "styled-components";
 import { Theme } from "src/lib";
 import AppDataContext from "../AppDataContext";
+import Resume from "./Resume";
 
 const Highlight = styled.span`
   color: ${Theme.secondary};
@@ -12,6 +13,7 @@ const Highlight = styled.span`
 
 const Root = styled.div`
   max-width: 60rem;
+  text-align: center;
 `;
 
 const P = styled.p`
@@ -69,6 +71,7 @@ const AboutMe: React.FC = () => {
           </ImgWrapper>
         }
       />
+      <Resume />
     </Root>
   );
 };

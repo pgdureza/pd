@@ -6,7 +6,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Theme } from "src/lib";
 import AppDataContext from "../AppDataContext";
-import styled from "styled-components";
+import { pulse } from "react-animations";
+import styled, { keyframes } from "styled-components";
 
 import {
   faPlaneArrival,
@@ -38,6 +39,7 @@ const Descriptions = styled.div`
 
 const Icon = styled(FontAwesomeIcon)`
   width: 1.5rem !important;
+  animation 1s ${keyframes`${pulse}`} infinite;
 `;
 
 const Root = styled(VerticalTimeline)`

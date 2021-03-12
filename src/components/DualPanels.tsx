@@ -20,10 +20,10 @@ const Content = styled.div`
   padding-bottom: 4rem;
   ${breakpoint("md")`
     width: 50%;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   `};
   ${breakpoint("lg")`
-    padding: 0 5rem;
+    padding: 0 2rem;
   `};
 `;
 
