@@ -19,6 +19,7 @@ import {
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CareerModal from "./CareerModal";
 
 const H3 = styled.h3`
   color: ${Theme.heroFont};
@@ -29,7 +30,7 @@ const H3 = styled.h3`
 const H5 = styled.h5`
   color: ${Theme.primary};
   font-family: ${Theme.fontFamily1};
-  letter-spacing: -1px;
+  letter-spacing: 1.25px;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 `;
@@ -48,10 +49,14 @@ const Root = styled(VerticalTimeline)`
   .vertical-timeline-element > div {
     border-radius: 1.5rem;
   }
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    float: right;
+  }
 `;
 
 const Career: React.FC = () => {
   const data = React.useContext(AppDataContext);
+
   return (
     <Root>
       {data.career.map((career, index) => {
@@ -67,6 +72,7 @@ const Career: React.FC = () => {
         ];
         return (
           <VerticalTimelineElement
+            key={career.position}
             className="vertical-timeline-element--work"
             contentStyle={{
               background,
@@ -91,6 +97,7 @@ const Career: React.FC = () => {
             <Descriptions>
               <Chips list={career.descriptions} />
             </Descriptions>
+            <CareerModal modal={career.modal} />
           </VerticalTimelineElement>
         );
       })}

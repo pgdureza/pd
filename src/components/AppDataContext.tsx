@@ -26,6 +26,13 @@ interface ICareerEntry {
   company: string;
   date: string;
   descriptions: string[];
+  modal: IModalContent[];
+}
+
+export interface IModalContent {
+  img: string;
+  description?: string;
+  title: string;
 }
 
 interface IData {

@@ -33,7 +33,14 @@
     },
     {
       "header": "Platforms",
-      "items": ["Shopify", "Salesforce CommerceCloud", "Hubspot", "Firebase"]
+      "items": [
+        "Shopify",
+        "Salesforce CommerceCloud",
+        "Hubspot",
+        "Firebase",
+        "Heroku",
+        "Vercel"
+      ]
     }
   ],
   "socials": {
@@ -45,31 +52,61 @@
   "career": [
     {
       "position": "Sr. Frontend Developer",
-      "company": "Tribe",
+      "company": "ZZConnect (TRIBE)",
       "date": "July 2018 - present",
       "descriptions": [
         "Website Development",
         "Product Development",
         "Influencer Marketing",
         "Agile Development"
+      ],
+      "modal": [
+        {
+          "img": "tribe1",
+          "title": "TRIBE website",
+          "description": "Overhaul of old marketing site using hubspot"
+        },
+        {
+          "img": "tribe2",
+          "title": "Brand App",
+          "description": "Frontend development for influencer marketing focused webapp."
+        }
       ]
     },
     {
       "position": "Shopify Lead Developer",
-      "company": "Outsourced Quality Assured Services",
+      "company": "Outsourced Quality Assured Services (acidgreen)",
       "date": "Nov 2017 – Jun 2018",
       "descriptions": [
         "Website Development",
         "Ecommerce",
         "Shopify Private Apps",
         "Agile Development"
+      ],
+      "modal": [
+        {
+          "img": "shopify",
+          "title": "Shopify ecommerce websites",
+          "description": "Led a team of shopify developers. Focused on customizing and extending shopify themes and dashboard."
+        }
       ]
     },
     {
       "position": "Demandware Developer",
       "company": "Moku Collective",
       "date": "Nov 2016 – Nov 2017",
-      "descriptions": ["Website Development", "Ecommerce", "Agile Development"]
+      "descriptions": ["Website Development", "Ecommerce", "Agile Development"],
+      "modal": [
+        {
+          "img": "dw1",
+          "title": "Demandware ecommerce websites",
+          "description": "focused on frontend development for ecommerce sites"
+        },
+        {
+          "img": "dw2",
+          "title": "More Demandware websites"
+        }
+      ]
     },
     {
       "position": "Technical Consultant",
@@ -80,19 +117,40 @@
         "Technical Consultation",
         "Ecommerce",
         "Website Development"
+      ],
+      "modal": [
+        {
+          "img": "sca1",
+          "title": "SCA websites",
+          "description": "Helped clients with customizing their Netsuite SCA and developed customized themes."
+        }
       ]
     },
     {
       "position": "Onsite Coordinator/Team Lead",
       "company": "Pointwest Innovations Corp",
       "date": "March 2013 - Aug  2015",
-      "descriptions": ["Product Development", "Airlines"]
+      "descriptions": ["Product Development", "Airlines"],
+      "modal": [
+        {
+          "img": "delta-seatmap",
+          "title": "Seat Selection",
+          "description": "Java & Javascript focused seat selection for airlines company."
+        }
+      ]
     },
     {
       "position": "Java Developer",
       "company": "Pointwest Innovations Corp",
       "date": "Jun 2011 - Mar 2013",
-      "descriptions": ["Product Development", "Airlines"]
+      "descriptions": ["Product Development", "Airlines"],
+      "modal": [
+        {
+          "img": "delta-dashboard",
+          "title": "Post-purchse dashboard",
+          "description": "Handles flight miles, forms of payment, future and past trip management."
+        }
+      ]
     }
   ]
 }
