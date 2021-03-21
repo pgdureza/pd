@@ -1,28 +1,36 @@
 {
   "files": {
     "main.css": "/pd/static/css/main.7a5dbc52.chunk.css",
-    "main.js": "/pd/static/js/main.38a2c1ca.chunk.js",
-    "main.js.map": "/pd/static/js/main.38a2c1ca.chunk.js.map",
+    "main.js": "/pd/static/js/main.5b796661.chunk.js",
+    "main.js.map": "/pd/static/js/main.5b796661.chunk.js.map",
     "runtime-main.js": "/pd/static/js/runtime-main.7a62f3a3.js",
     "runtime-main.js.map": "/pd/static/js/runtime-main.7a62f3a3.js.map",
     "static/css/2.e03f6e46.chunk.css": "/pd/static/css/2.e03f6e46.chunk.css",
-    "static/js/2.69636cf6.chunk.js": "/pd/static/js/2.69636cf6.chunk.js",
-    "static/js/2.69636cf6.chunk.js.map": "/pd/static/js/2.69636cf6.chunk.js.map",
+    "static/js/2.cc317407.chunk.js": "/pd/static/js/2.cc317407.chunk.js",
+    "static/js/2.cc317407.chunk.js.map": "/pd/static/js/2.cc317407.chunk.js.map",
     "index.html": "/pd/index.html",
-    "precache-manifest.c0cb5029b673a87150f68d8ac6631e89.js": "/pd/precache-manifest.c0cb5029b673a87150f68d8ac6631e89.js",
+    "precache-manifest.ac27a7cd29f6b6e6ab624f4239beb10e.js": "/pd/precache-manifest.ac27a7cd29f6b6e6ab624f4239beb10e.js",
     "service-worker.js": "/pd/service-worker.js",
     "static/css/2.e03f6e46.chunk.css.map": "/pd/static/css/2.e03f6e46.chunk.css.map",
     "static/css/main.7a5dbc52.chunk.css.map": "/pd/static/css/main.7a5dbc52.chunk.css.map",
-    "static/js/2.69636cf6.chunk.js.LICENSE.txt": "/pd/static/js/2.69636cf6.chunk.js.LICENSE.txt",
+    "static/js/2.cc317407.chunk.js.LICENSE.txt": "/pd/static/js/2.cc317407.chunk.js.LICENSE.txt",
     "static/media/background.jpg": "/pd/static/media/background.8de631fd.jpg",
+    "static/media/delta-dashboard.png": "/pd/static/media/delta-dashboard.620b7b51.png",
+    "static/media/delta-seatmap.png": "/pd/static/media/delta-seatmap.bdd2c02b.png",
+    "static/media/dw1.png": "/pd/static/media/dw1.162cad89.png",
+    "static/media/dw2.png": "/pd/static/media/dw2.c1a5cfa0.png",
     "static/media/me.jpg": "/pd/static/media/me.129d0095.jpg",
-    "static/media/skills.svg": "/pd/static/media/skills.f17fdee9.svg"
+    "static/media/sca1.png": "/pd/static/media/sca1.c985e1c8.png",
+    "static/media/shopify.png": "/pd/static/media/shopify.3cd02252.png",
+    "static/media/skills.svg": "/pd/static/media/skills.f17fdee9.svg",
+    "static/media/tribe1.png": "/pd/static/media/tribe1.6b366b75.png",
+    "static/media/tribe2.png": "/pd/static/media/tribe2.b7f9bebf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7a62f3a3.js",
     "static/css/2.e03f6e46.chunk.css",
-    "static/js/2.69636cf6.chunk.js",
+    "static/js/2.cc317407.chunk.js",
     "static/css/main.7a5dbc52.chunk.css",
-    "static/js/main.38a2c1ca.chunk.js"
+    "static/js/main.5b796661.chunk.js"
   ]
 }
